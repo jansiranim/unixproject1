@@ -1,1 +1,2 @@
 
+guessinggame.sh echo"GUESSING GAME"echo"Make A guess on the number of files in the directory"value=$(ls-la |wc-1)function game {echo "Guess the number"read guess}while [[$guess -ne $value]]do gameif[[$guess -gt $value]]thenecho "Your guess is too high,Try lesser one"elif[[$guess -lt $value]]thenecho "Your guess is too low,Try again with bigger one"elseecho "Wrong Guess"fidoneecho"Congrats!!! you guessed it right"
